@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsión Meteorológica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="download-xml">
+            <a href="#">Descargar XML de la predicción detallada de Campos<span class="xml-button">XML</span></a>
+        </div>
+        
+        <table class="forecast-table">
+            <thead>
+                <tr class="day-row">
+                    <th colspan="2">jue. 15</th>
+                    <th colspan="4">vie. 16</th>
+                    <th colspan="2">sáb. 17</th>
+                    <th colspan="2">dom. 18</th>
+                    <th>lun. 19</th>
+                    <th>mar. 20</th>
+                    <th>mié. 21</th>
+                </tr>
+                <tr class="hour-row">
+                    <td class="hour-cell">12-18 h</td>
+                    <td class="hour-cell">18-24 h</td>
+                    <td class="hour-cell">00-06 h</td>
+                    <td class="hour-cell">06-12 h</td>
+                    <td class="hour-cell">12-18 h</td>
+                    <td class="hour-cell">18-24 h</td>
+                    <td class="hour-cell">00-12 h</td>
+                    <td class="hour-cell">12-24 h</td>
+                    <td class="hour-cell">00-12 h</td>
+                    <td class="hour-cell">12-24 h</td>
+                    <td class="hour-cell"></td>
+                    <td class="hour-cell"></td>
+                    <td class="hour-cell"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="weather-icon-row">
+                    <td class="forecast-cell">
+                        <img src="img/niebla.png" alt="Parcialmente nublado" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/niebla.png" alt="Parcialmente nublado" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/noche.png" alt="Noche nublada" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/lluvia.png" alt="Lluvia" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/lluvia.png" alt="Lluvia" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/pocoNublado.png" alt="Parcialmente nublado" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/soleado.png" alt="Soleado" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/soleado.png" alt="Soleado" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/pocoNublado.png" alt="Parcialmente nublado" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/soleado.png" alt="Soleado" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/pocoNublado.png" alt="Parcialmente nublado" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/lluvia.png" alt="Lluvia" class="weather-icon">
+                    </td>
+                    <td class="forecast-cell">
+                        <img src="img/lluvia.png" alt="Lluvia" class="weather-icon">
+                    </td>
+                </tr>
+                <tr class="temperature-row">
+                    <td class="forecast-cell">
+                        <div class="temperature">20°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">15°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">17°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">24°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">21°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">14°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">17°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">21°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">15°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">22°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">19°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">17°C</div>
+                    </td>
+                    <td class="forecast-cell">
+                        <div class="temperature">16°C</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <table class="data-table">
+            <tr>
+                <td class="precipitation-header" colspan="13">Probabilidad de precipitación</td>
+            </tr>
+            <tr class="precipitation-row">
+                <td>0%</td>
+                <td>0%</td>
+                <td>0%</td>
+                <td>75%</td>
+                <td>90%</td>
+                <td>0%</td>
+                <td>0%</td>
+                <td>0%</td>
+                <td>0%</td>
+                <td>0%</td>
+                <td>5%</td>
+                <td>60%</td>
+                <td>55%</td>
+            </tr>
+            <tr>
+                <td class="precipitation-header" colspan="13">Cota de nieve a nivel de provincia (m)</td>
+            </tr>
+            <tr class="snow-level-row">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="temp-minmax-header" colspan="13">Temperatura mínima y máxima (°C)</td>
+            </tr>
+            <tr class="temp-minmax-row">
+                <td colspan="2">13 / 24</td>
+                <td colspan="3">12 / 25</td>
+                <td colspan="2">12 / 25</td>
+                <td colspan="2">12 / 26</td>
+                <td colspan="2">13 / 28</td>
+                <td>16 / 25</td>
+                <td>13 / 26</td>
+            </tr>
+            <tr>
+                <td class="wind-header" colspan="13">Dirección y velocidad del viento (km/h)</td>
+            </tr>
+            <tr class="wind-direction-row">
+                <td>C</td>
+                <td>O</td>
+                <td>E</td>
+                <td>NE</td>
+                <td>N</td>
+                <td>C</td>
+                <td>S</td>
+                <td>S</td>
+                <td>SE</td>
+                <td>SE</td>
+                <td>SE</td>
+                <td>SO</td>
+                <td>C</td>
+            </tr>
+            <tr class="wind-speed-row">
+                <td><div class="wind-circle">0</div></td>
+                <td><div class="wind-circle">15</div></td>
+                <td><div class="wind-circle">0</div></td>
+                <td><div class="wind-circle">10</div></td>
+                <td><div class="wind-circle">10</div></td>
+                <td><div class="wind-circle">0</div></td>
+                <td><div class="wind-circle">15</div></td>
+                <td><div class="wind-circle">15</div></td>
+                <td><div class="wind-circle">15</div></td>
+                <td><div class="wind-circle">15</div></td>
+                <td><div class="wind-circle">15</div></td>
+                <td><div class="wind-circle">20</div></td>
+                <td><div class="wind-circle">0</div></td>
+            </tr>
+            <tr>
+                <td class="uv-header" colspan="13">Índice ultravioleta máximo</td>
+            </tr>
+            <tr class="uv-row">
+                <td colspan="2"><div class="uv-index red">7</div></td>
+                <td colspan="4"><div class="uv-index yellow">8</div></td>
+                <td colspan="2"><div class="uv-index red">7</div></td>
+                <td colspan="2"><div class="uv-index red">8</div></td>
+                <td colspan="1"><div class="uv-index red">8</div></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td class="warnings-header" colspan="13">Avisos: Sur de Mallorca</td>
+            </tr>
+            <tr class="warnings-row">
+                <td colspan="2"><div class="warning-circle green"></div></td>
+                <td colspan="4"><div class="warning-circle green"></div></td>
+                <td colspan="2"><div class="warning-circle green"></div></td>
+                <td colspan="2"></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+            </tr>
+        </table>
+        
+        <div class="detailed-table-button">
+            <a href="#" class="show-detailed">Ver tabla detallada</a>
+            <span class="dropdown-arrow">▼</span>
+        </div>
+    </div>
+</body>
+</html>

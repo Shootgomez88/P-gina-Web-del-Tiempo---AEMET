@@ -1,0 +1,243 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url('img/fondo-meteo.jpg') no-repeat center center fixed;
+    background-size: 200%;
+    margin: 0;
+    padding: 0;
+}
+  
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Enlace para descargar XML */
+.download-xml {
+    text-align: right;
+    margin: 15px 0;
+}
+
+.download-xml a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.xml-button {
+    background-color: #bb9e60;
+    color: white;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+/* Tabla principal de previsión */
+.forecast-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+
+.day-row th {
+    background-color: #5d87c5;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: normal;
+    border: 1px solid white;
+}
+
+.hour-row {
+    background-color: #5d87c5;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+.hour-cell {
+    border: 1px solid white;
+    padding: 4px;
+}
+
+.forecast-cell {
+    background-color: #5d87c5;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.weather-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 auto;
+    display: block;
+}
+
+.temperature {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Tabla de datos adicionales */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0;
+}
+
+.precipitation-header, .temp-minmax-header, .wind-header, .uv-header, .warnings-header {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: left;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: normal;
+    border: 3px solid #f0f0f0;
+}
+
+.precipitation-row td, .temp-minmax-row td, .wind-direction-row td, .wind-speed-row td, .uv-row td, .warnings-row td {
+    background-color: white;
+    border: 3px solid #f0f0f0;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+.snow-level-row td {
+    background-color: white;
+    border: 3px solid #f0f0f0;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Estilos para círculos de viento */
+.wind-circle {
+    width: 24px;
+    height: 24px;
+    background-color: #5d87c5;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Estilos para índices UV */
+.uv-index {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+.yellow {
+    background-color: #f1c40f;
+}
+
+/* Estilos para círculos de advertencia */
+.warning-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.green {
+    background-color: #2ecc71;
+}
+
+/* Botón para ver tabla detallada */
+.detailed-table-button {
+    width: 100%;
+    background-color: #234781;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.show-detailed {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+/* Ajustes para los íconos de clima */
+.weather-icon-row img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Ajustes para que los índices UV tengan el formato correcto */
+.uv-index::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.red::before {
+    border-bottom: 5px solid #e74c3c;
+}
+
+.yellow::before {
+    border-bottom: 5px solid #f1c40f;
+}
+
+.hour-cell,
+.forecast-cell,
+.temperature-row .forecast-cell {
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.wind-direction-row,
+.wind-direction-row td,
+.wind-speed-row td, .uv-row td, .warnings-row td  {
+    border-top: none;
+    border-bottom: none;
+    border-left: 3px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+}
+
+
+
